@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini Blog</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Mon Mini Blog</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Catégories</a></li>
+        <li><a href="#">À propos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="filtres">
+    <button data-filtre="tous">Tous</button>
+    <button data-filtre="tech">Tech</button>
+    <button data-filtre="voyage">Voyage</button>
+    <button data-filtre="lifestyle">Lifestyle</button>
+  </section>
+
+  <main>
+    <section id="liste-articles" class="articles">
+      <!-- Les articles seront injectés ici en JS -->
+    </section>
+
+    <div class="pagination">
+      <button id="precedent">Précédent</button>
+      <span id="page-actuelle">1</span>
+      <button id="suivant">Suivant</button>
+    </div>
+  </main>
+
+  <section class="commentaires">
+    <h2>Laissez un commentaire</h2>
+    <form id="form-commentaire">
+      <input type="text" placeholder="Votre nom" required />
+      <textarea placeholder="Votre commentaire" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+    <div id="liste-commentaires">
+      <!-- Commentaires affichés ici -->
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mini Blog - Tous droits réservés.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
